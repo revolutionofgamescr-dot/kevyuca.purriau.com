@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KevYuca</title>
+
+  <!-- Favicon (coloca favicon.png en la misma carpeta que este archivo) -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style>
+    /* ====== MODO CLARO (por defecto) ====== */
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --border: #ccc;
+      --placeholder: #ddd;
+      --placeholder-text: #666;
+    }
+
+    /* ====== MODO OSCURO AUTOMÁTICO ====== */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e4e4e4;
+        --border: #444;
+        --placeholder: #333;
+        --placeholder-text: #aaa;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+
+    .section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .project-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .project-item img {
+      width: 120px;
+      height: 120px;
+      background: var(--placeholder); /* Cambia por tu imagen real */
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .newsletter {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .newsletter-placeholder {
+      width: 100%;
+      max-width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 2px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      color: var(--placeholder-text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / BANNER -->
+  <header>
+    <div class="logo">
+      <!-- Reemplaza con tu logo real -->
+      <img src="banner.png" alt="KevYuca" style="width:60px; height:auto;">
+      <h1>KevYuca</h1>
+    </div>
+    <div class="social-icons">
+      <!-- Reemplaza los # con enlaces reales -->
+      <a href="https://kevyuca.itch.io" title="Itch.io">🕹️</a>
+      <a href="https://x.com/KevYuca" title="Twitter/X">🐦</a>
+      <a href="https://www.youtube.com/@KevYuca" title="YouTube">▶️</a>
+    </div>
+  </header>
+
+  <!-- SECCIÓN DE TEXTO PRINCIPAL -->
+  <section class="section" id="intro">
+    <p><em>Kevyuca es una desarrolladora de videojuegos indie en Costa Rica, es manejada ahora mismo por Kevin J. Brenes, o su seudónimo en redes, Kevo I.</em></p>
+  </section>
+
+  <!-- SECCIÓN DE PROYECTOS -->
+  <section class="section" id="projects">
+    <h2>Proyectos</h2>
+
+    <div class="projects">
+
+      <!-- Proyecto 1 -->
+      <div class="project-item">
+        <img src="icon.png" alt="Proyecto 1">
+        <div>
+          <h3>Ferrum Velum</h3>
+          <p>Ferrum Velum es un juego sobre un espía estadounidense llamado David, su misión es colapsar a la Unión Soviética desde adentro, es un juego casual con estética pixelart.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Inscripción a Newsletter</h2>
+    <div class="newsletter-placeholder">
+      https://forms.gle/wGUJVk3hGRYMazia7
+    </div>
+  </section>
+
+</body>
+</html>
