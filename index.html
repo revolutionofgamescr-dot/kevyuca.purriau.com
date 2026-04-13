@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KevYuca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .banner { 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('assets/images/logo-kevyuca.png') center/cover no-repeat; 
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
 
+    <!-- NAV -->
+    <nav class="bg-black/80 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3">
+                <img src="assets/images/logo-kevyuca.png" alt="Kevyuca" class="h-10">
+                <span class="text-2xl font-bold">KEVYUCA</span>
+            </a>
+            <div class="flex gap-8 text-lg">
+                <a href="/" class="hover:text-amber-400">Inicio</a>
+                <a href="/kevo-i" class="hover:text-amber-400">Kevo-I</a>
+                <a href="/ferrumvelum" class="hover:text-amber-400">Ferrum Velum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner h-screen flex items-center justify-center text-center pt-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <img src="assets/images/logo-kevyuca.png" alt="Kevyuca" class="mx-auto h-40 mb-8">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6">HOLA! Bienvenidos a Kevyuca</h1>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mt-12">
+                <a href="/kevo-i" class="bg-amber-500 hover:bg-amber-600 text-black font-bold text-2xl px-12 py-6 rounded-2xl transition">Kevo-I</a>
+                <a href="/ferrumvelum" class="bg-white hover:bg-gray-200 text-black font-bold text-2xl px-12 py-6 rounded-2xl transition">Ferrum Velum</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ ES KEVYUCA -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">¿Qué somos?</h2>
+            <p class="text-xl leading-relaxed">
+                <!-- Somos una desarrolladora indie en Costa Rica, nos dedicamos a hacer videojuegos!!! :3 Aunque la idea de esta proyecto tiene varios años, hasta 2026 nos ponemos a hacerla seriamente. Esperamos que nuestro contenido les agrade. -->
+            </p>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Nuestro Equipo</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!--Kevin J. Brenes/Kevo I
+              Wonderman-->
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">ÚNETE A NUESTRA NEWSLETTER</h2>
+            <p class="mb-8">ES</p>
+            <form action="https://formspree.io/f/xjgjbzkl" method="POST" class="flex flex-col sm:flex-row gap-3">
+                <input type="email" name="email" placeholder="tu@email.com" required
+                       class="flex-1 px-6 py-5 bg-zinc-800 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500">
+                <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-black font-bold px-10 py-5 rounded-2xl">
+                    UNIRME :3
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex gap-8 text-4xl">
+                <a href="https://https://x.com/KevYuca" target="_blank" class="hover:text-amber-400"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@KevYuca" target="_blank" class="hover:text-amber-400"><i class="fab fa-youtube"></i></a>
+                <a href="https://kevyuca.itch.io" target="_blank" class="hover:text-amber-400"><i class="fab fa-itch-io"></i></a>
+            </div>
+            <p class="text-zinc-500">KEVYUCAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        </div>
+    </footer>
+
+</body>
+</html>
